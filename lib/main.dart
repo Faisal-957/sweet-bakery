@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sweetbakery/ui/screens/onboard_screen.dart';
-import 'package:sweetbakery/ui/screens/splash_screen.dart';
+import 'package:sweetbakery/ui/screens/on_board_screen/onboard_screen.dart';
 
 void main() {
   runApp(const MyApp());

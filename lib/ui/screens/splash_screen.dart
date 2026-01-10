@@ -1,9 +1,6 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:sweetbakery/core/constant/string.dart';
 import 'package:sweetbakery/core/constant/text_style.dart';
-import 'package:sweetbakery/ui/screens/home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
