@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:sweetbakery/core/constant/string.dart';
 import 'package:sweetbakery/core/constant/text_style.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class SignupScreen extends StatelessWidget {
+  const SignupScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -37,11 +37,11 @@ class LoginScreen extends StatelessWidget {
               text: TextSpan(
                 children: [
                   TextSpan(
-                    text: "Login\n",
+                    text: "Sign Up\n",
                     style: style32.copyWith(fontWeight: FontWeight.bold),
                   ),
                   TextSpan(
-                    text: "Enter your credentials to connect",
+                    text: "Please fill the form to create an account",
                     style: style19.copyWith(
                       color: Color(0xff872626),
                       fontWeight: FontWeight.w100,
@@ -50,6 +50,20 @@ class LoginScreen extends StatelessWidget {
                 ],
               ),
             ),
+            SizedBox(height: 20),
+            Text("Name", style: style19.copyWith(fontSize: 24)),
+            TextField(
+              decoration: InputDecoration(
+                filled: true,
+                fillColor: Color(0xffCBC8E7),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(20),
+                  borderSide: BorderSide.none,
+                ),
+                hintText: 'Enter your name',
+              ),
+            ),
+
             SizedBox(height: 20),
             Text("Email", style: style19.copyWith(fontSize: 24)),
             TextField(
@@ -63,7 +77,6 @@ class LoginScreen extends StatelessWidget {
                 hintText: 'Enter your email',
               ),
             ),
-
             SizedBox(height: 20),
             Text("Password", style: style19.copyWith(fontSize: 24)),
             TextField(
@@ -78,7 +91,7 @@ class LoginScreen extends StatelessWidget {
                 hintText: 'Enter your password',
               ),
             ),
-            Text("forgot password?", style: style16),
+
             SizedBox(height: 20),
             Center(
               child: SizedBox(
@@ -93,7 +106,7 @@ class LoginScreen extends StatelessWidget {
                     padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
                   ),
                   child: Text(
-                    "Login",
+                    "sign Up",
                     style: style19.copyWith(color: Colors.white),
                   ),
                 ),
@@ -103,11 +116,11 @@ class LoginScreen extends StatelessWidget {
               text: TextSpan(
                 children: [
                   TextSpan(
-                    text: "Don't have an account? ",
+                    text: "Allready have an account? ",
                     style: style16.copyWith(color: Colors.black),
                   ),
                   TextSpan(
-                    text: "create account",
+                    text: "login",
                     style: style16.copyWith(
                       color: Color.fromARGB(255, 48, 14, 197),
                       fontWeight: FontWeight.bold,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sweetbakery/ui/screens/login_screen.dart';
-import 'package:sweetbakery/ui/screens/on_board_screen/onboard_screen.dart';
+import 'package:sweetbakery/ui/screens/signup_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,6 +11,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: LoginScreen());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: SignupScreen());
   }
 }
