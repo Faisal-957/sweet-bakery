@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sweetbakery/ui/screens/login_screen.dart';
 import 'package:sweetbakery/ui/screens/on_board_screen/onboard_screen.dart';
 
 void main() {
@@ -10,9 +11,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: OnboardScreen(),
-    );
+    return MaterialApp(debugShowCheckedModeBanner: false, home: LoginScreen());
   }
 }

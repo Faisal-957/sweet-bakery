@@ -31,7 +31,7 @@ class _SplashScreenState extends State<SplashScreen> {
           children: [
             Image.asset("$staticAssets/logo.png", scale: 3),
             Text("Sweet Baker", style: style42),
-            Text("Baked with Love, Served with Care", style: style12),
+            Text("Baked with Love, Served with Care", style: style16),
           ],
         ),
       ),
