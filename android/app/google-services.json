@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "370490267494",
+    "project_id": "sweetbakry-a951c",
+    "storage_bucket": "sweetbakry-a951c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370490267494:android:99f709d208f408a0b59aa7",
+        "android_client_info": {
+          "package_name": "com.example.sweetbakery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyq29_CoErkWsKT7_wm9kxmO0BjMnGOh0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
