@@ -1,11 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:sweetbakery/firebase_options.dart';
-import 'package:sweetbakery/ui/screens/login_screen.dart';
-import 'package:sweetbakery/ui/screens/portfolio.dart';
-import 'package:sweetbakery/ui/screens/signup_screen.dart';
-
-import 'package:flutter/material.dart';
+import 'package:sweetbakery/ui/screens/on_board_screen/home_screen/home.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized(); // Important
@@ -21,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(), // Tumhara signup screen
+      home: Home(), // Tumhara signup screen
     );
   }
 }

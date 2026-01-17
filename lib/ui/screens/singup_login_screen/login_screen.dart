@@ -3,7 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:sweetbakery/ui/screens/on_board_screen/onboard_screen.dart';
 import 'package:sweetbakery/core/constant/string.dart';
 import 'package:sweetbakery/core/constant/text_style.dart';
-import 'package:sweetbakery/ui/screens/signup_screen.dart';
+import 'package:sweetbakery/ui/screens/singup_login_screen/signup_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   LoginScreen({super.key});
@@ -24,11 +24,10 @@ class _LoginScreenState extends State<LoginScreen> {
     });
 
     try {
-      UserCredential user = await FirebaseAuth.instance
-          .signInWithEmailAndPassword(
-            email: emailController.text,
-            password: passwordController.text,
-          );
+      await FirebaseAuth.instance.signInWithEmailAndPassword(
+        email: emailController.text,
+        password: passwordController.text,
+      );
 
       // Login success → Navigate
       Navigator.push(
